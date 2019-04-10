@@ -4,6 +4,9 @@
 
 2. 起步依赖：告诉spring boot需要什么功能，它就能引入需要的依赖库
 
-3. 
+3. Actuator：深入运行中的spring boot 程序，监控spring boot的运行状况
+
+4. 命令行界面：spring boot 可选特性，主要针对Groovy语言开发成程序使用
+
 
 
