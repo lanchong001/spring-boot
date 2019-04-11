@@ -1,11 +1,23 @@
 # 快速开发springboot程序步骤
 
-1. 创建一个spring boot 项目
+* 创建一个spring boot 项目
 
-> 创建Spring boot 项目的方式
->
-> 1. 使用eclipse的Spring Tool Suite\(STS\)插件或者IDEA自带的插件进行创建
-> 2. 使用maven创建项目
+1. 使用eclipse 的 Spring Tool Suite\(STS\) 插件、或者 IDEA自带的插件创建
+2. 直接使用Maven创建项目的方式创建
+
+* POM文件中增加 spring boot parent 依赖,以及其他的起步依赖
+
+```
+	<!--继承spring boot的父级项目依赖-->
+	<parent>
+		<groupId>com.lym.springboot</groupId>
+		<artifactId>springboot-demo</artifactId>
+		<version>1.0.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	
+```
 
 
 
