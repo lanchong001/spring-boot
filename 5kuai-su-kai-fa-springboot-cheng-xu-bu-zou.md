@@ -7,7 +7,7 @@
 1. 使用eclipse 的 Spring Tool Suite\(STS\) 插件、或者 IDEA自带的插件创建
 2. 直接使用Maven创建项目的方式创建
 
-* POM文件中增加 spring boot parent 依赖,以及其他的启动依赖
+3. POM文件中增加 spring boot parent 依赖,以及其他的启动依赖
 
 ```
     <!--继承spring boot的父级项目依赖-->
@@ -47,8 +47,6 @@ public class SpringBootApplication {
 @RestController
 @RequestMapping("/helloworld")
 public class HelloWorldController {
-
-
     @GetMapping("/hi}")
     public String (){
        return "Hi, Spring Boot!";
