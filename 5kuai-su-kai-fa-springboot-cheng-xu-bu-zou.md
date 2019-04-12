@@ -7,8 +7,6 @@
 1. 使用eclipse 的 Spring Tool Suite\(STS\) 插件、或者 IDEA自带的插件创建
 2. 直接使用Maven创建项目的方式创建
 
-
-
 * POM文件中增加 spring boot parent 依赖,以及其他的启动依赖
 
 ```
@@ -35,10 +33,26 @@
 @SpringBootApplication
 public class SpringBootApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootApplication.class, args);
-	}
+    public static void main(String[] args) {
+        //启动springboot程序,启动spring容器.如果引用了spring-boot-starter-web的话,默认启动内嵌的tomcat服务器
+        SpringApplication.run(SpringBootApplication.class, args);
+    }
 
+}
+```
+
+* 创建一个Spring MVC 的 Controler类
+
+```
+@RestController
+@RequestMapping("/helloworld")
+public class HelloWorldController {
+
+
+    @GetMapping("/hi}")
+    public String (){
+       return "Hi, Spring Boot!";
+    }
 }
 ```
 
