@@ -2,6 +2,8 @@
 
 * 创建一个spring boot 项目
 
+---
+
 1. 使用eclipse 的 Spring Tool Suite\(STS\) 插件、或者 IDEA自带的插件创建
 2. 直接使用Maven创建项目的方式创建
 
@@ -25,6 +27,19 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+```
+
+* 创建Spring boot 的入口main方法，添加@SpringBootApplication注解
+
+```
+@SpringBootApplication
+public class SpringBootApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootApplication.class, args);
+	}
+
+}
 ```
 
 
