@@ -115,7 +115,7 @@ public class MavenSpringBootWebAppliction {
     }
 }
 //其他的带有配置项或者注解@Controller,@RestController,@Service,@Compoment,@Repository,@Mapper的类必须是com.lym.springboot.maven.springboot.web
-包的子包, Spring Boot 的自动配置,包扫描,Bean注入才会有效果.否则,提示找不到对应的对象
+包和子包里面, Spring Boot 的自动配置,包扫描,Bean注入才会有效果.否则,提示找不到对应的对象
 ```
 
 1. main方法是一个标准的java程序的main方法,主要作用是作为项目启动运行得入口
