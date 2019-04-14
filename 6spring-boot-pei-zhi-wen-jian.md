@@ -13,7 +13,7 @@ server.port=9080
 server.servlet.context-path=/springboot-web
 ```
 
-1. .yml 或者 .yaml格式的配置文件\(yml语言格式\)
+1. .yml 或者 .yaml 格式的配置文件\(yml语言格式\)
 
 ```
 server:
