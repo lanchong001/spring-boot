@@ -13,7 +13,7 @@ server.port=9080
 server.servlet.context-path=/springboot-web
 ```
 
-1. .yml 或者 .yaml 格式的配置文件\(YAML标记语言格式,详情请查看\[YAML语法\]\([https://www.yiibai.com/yaml/](https://www.yiibai.com/yaml/)\)\)
+1. .yml 或者 .yaml 格式的配置文件\(YAML标记语言格式,详情请查看[https://www.yiibai.com/yaml/](https://www.yiibai.com/yaml/ "YAML语法")\)
 
 ```
 server:
@@ -25,6 +25,12 @@ server:
 ```
 
 > 如果同时存在 appliction.properties 和 appliction.yml 配置文件的话,优先使用 appliction.properties 中的配置
+
+---
+
+## 多环境配置文件
+
+
 
 
 
