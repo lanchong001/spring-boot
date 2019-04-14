@@ -54,5 +54,55 @@ public class HelloWorldController {
 }
 ```
 
+#  
+
+# Spring Boot 脚手架相关的特征 
+
+---
+
+1. spring boot 项目必须配置父级依赖 spring-boot-starter-parent , 配置了spring-boot-starter-parent父级依赖,则表明当前项目为Spring Boot 项目
+2. spring-boot-starter-parent 是一个特殊的starter依赖,它包含常用功能的 maven jar 包依赖,并且已经制定了jar包的版本.因此,spring boot 项目使用相关功能时,只需要提供 groupId 和 artifactId,而不需要提供 version
+
+1. spring boot 中提供了那些默认的jar包依赖及版本,可以在该父级依赖的pom文件中找到
+
+* ```
+  //spring-boot-dependencies-2.1.4.RELEASE.pom 中列出的常用依赖版本号
+  <properties>
+      <activemq.version>5.15.9</activemq.version>
+      <activemq.version>5.15.9</activemq.version>
+      <antlr2.version>2.7.7</antlr2.version>
+      <appengine-sdk.version>1.9.73</appengine-sdk.version>
+      <artemis.version>2.6.4</artemis.version>
+      <aspectj.version>1.9.2</aspectj.version>
+      <assertj.version>3.11.1</assertj.version>
+      <atomikos.version>4.0.6</atomikos.version>
+      <bitronix.version>2.1.4</bitronix.version>
+      <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
+      <byte-buddy.version>1.9.12</byte-buddy.version>
+      <caffeine.version>2.6.2</caffeine.version>
+      <cassandra-driver.version>3.6.0</cassandra-driver.version>
+      <classmate.version>1.4.0</classmate.version>
+      <commons-codec.version>1.11</commons-codec.version>
+      <commons-dbcp2.version>2.5.0</commons-dbcp2.version>
+      <commons-lang3.version>3.8.1</commons-lang3.version>
+      <commons-pool.version>1.6</commons-pool.version>
+      <commons-pool2.version>2.6.1</commons-pool2.version>   
+      ...
+  <properties>
+  ```
+
+1. 如果不想使用某个默认的依赖,可以通过pom文件的属性配置覆盖各个依赖项
+
+```
+//采用 5.15.8 覆盖 spring boot 默认的 activemq版本
+<properties>
+    <activemq.version>5.15.8</activemq.version>
+<properties>
+```
+
+1. @SpringBootAppliction 注解 是SpringBoot项目的核心注解,主要作用是启动Spring的自动配置
+2. main方法是一个标准的java程序的main方法,主要作用是作为项目启动运行得入口
+3. Spring Boot Web 项目依然是使用 Spring + Spring MVC 相关的库
+
 
 
