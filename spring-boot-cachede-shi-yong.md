@@ -44,10 +44,13 @@ Spring 提供了一系列的注解，包括@Cacheable，@CachePut，@CacheEvict�
 ```
 //启用缓存配置(Spring Boot 启动类上配置)
 @EnableCaching 
+
 //指定某个方法的返回值是可以缓存的。在注解属性中指定缓存规则。
 @Cacheable
+
 //将方法的返回值缓存到指定的key中
-@Cacheput
+@CachePut
+
 //删除指定的缓存数据
 @CacheEvict
 
