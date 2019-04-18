@@ -2,7 +2,7 @@
 
 ---
 
-### Spring Cache 
+### Spring Cache
 
 Spring Cache 是 Spring 针对 Spring 应用给出的一整套缓存解决方案
 
@@ -56,5 +56,11 @@ Spring 提供了一系列的注解，包括@Cacheable，@CachePut，@CacheEvict�
 //@Cacheput会先执行方法，然后再将执行结果写入缓存。
 ```
 
+---
 
+[https://www.jianshu.com/p/fc076b6c2a13](https://www.jianshu.com/p/fc076b6c2a13)
+
+[https://www.jianshu.com/p/3fbd5af2d789](https://www.jianshu.com/p/3fbd5af2d789)
+
+[http://www.cnblogs.com/yueshutong/p/9381540.html](http://www.cnblogs.com/yueshutong/p/9381540.html)
 
