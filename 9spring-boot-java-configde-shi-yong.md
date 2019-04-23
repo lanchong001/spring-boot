@@ -83,5 +83,21 @@ public class ConfigTest {
 }
 ```
 
+---
+
+### scope 的5种类型
+
+1. singleton : 容器中创建时只存在一个实例,所有引用此bean都是单一实例.
+
+2. prototype : spring容器在进行输出prototype的bean对象时,会每次都重新生成一个新的对象给请求方,虽然这种类型的对象的实例化以及属性设置等工作都是由容器负责的.但是只要准备完毕,并且对象实例返回给请求方之后,容器就不在拥有当前对象的引用,请求方需要自己负责当前对象后继生命周期的管理工作,包括该对象的销毁.
+
+3. request : Spring容器，即XmlWebApplicationContext 会为每个HTTP请求创建一个全新的RequestPrecessor对象,当请求结束后,该对象的生命周期即告结束.
+
+4. session : 对于web应用来说,放到session中最普遍的就是用户的登录信息.Spring容器会为每个独立的session创建属于自己的全新的实例.
+
+5. globalsession : global session只有应用在基于porlet的web应用程序中才有意义,它映射到porlet的global范围的session,如果普通的servlet的web 应用中使用了这个scope,容器会把它作为普通的session的scope对待.
+
+### 
+
 
 
