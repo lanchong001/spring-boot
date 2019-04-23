@@ -8,6 +8,8 @@
 4. @ImportResource : 导入xml配置文件
 5. @Bean : 用来定义一个bean , 可以指定init\(\),destory\(\)方法,指定bean的范围
 
+[https://blog.csdn.net/moakun/article/details/80178330](https://blog.csdn.net/moakun/article/details/80178330)
+
 ---
 
 * 当 java config 所在的类与单元测试类不再同一个命名空间内时，需要在运行单元测试的上下文中配置 java config 类
@@ -31,7 +33,7 @@ public class ConfigTest {
 
     //Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
     //单元测试时, @SpringBootTest(classes = Config.class) 和 @ContextConfiguration(classes = Config.class) 两者有一个配置就可以执行单元测试
-    
+
     //DoWorkBean在com.lym.springboot.javaconfig.config.Config目录, 单元测试类在com.lym.springboot.javaconfig.因此,需要指定Java config 配置类
     @Resource
     private DoWorkBean doWorkBean;
