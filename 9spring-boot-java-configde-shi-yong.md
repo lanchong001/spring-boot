@@ -45,5 +45,21 @@ public class ConfigTest {
 }
 ```
 
+---
+
+* 一个完整的@Bean注解包括 id,classes,initMethod,destoryMethod,ref和scope属性
+
+```
+    /**
+     * 一个完整的bean配置包括了 id,class,initMethod,destroyMethod,·ref,scope
+     *
+     * @return
+     */
+    @Bean(initMethod = "init",destroyMethod = "destory")
+    public DoWorkBean doWorkBean() {
+        return new DoWorkBean();
+    }
+```
+
 
 
