@@ -61,5 +61,27 @@ public class ConfigTest {
     }
 ```
 
+---
+
+* SpringBootTest 单元测试中获取上下文,直接通过 @Autowired 注入相关上下文
+
+```
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Config.class)
+public class ConfigTest {
+
+    @Autowired
+    public ApplicationContext context;
+
+    @Test
+    public void doWorkBean() throws Exception {
+        DoWorkBean doWorkBean1 = context.getBean(DoWorkBean.class);
+        System.out.println(doWorkBean1);
+        DoWorkBean doWorkBean2 = context.getBean(DoWorkBean.class);
+        System.out.println(doWorkBean2);
+    }
+}
+```
+
 
 
